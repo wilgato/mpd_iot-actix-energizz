@@ -1,0 +1,10 @@
+C:\Users\wilki\OneDrive\Área de Trabalho\tcc\mpd_iot-actix-energizz\migration\target\debug\deps\anstyle_wincon-632d5710c6975eff.rmeta: C:\Users\wilki\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anstyle-wincon-3.0.1\src\lib.rs C:\Users\wilki\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anstyle-wincon-3.0.1\src\ansi.rs C:\Users\wilki\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anstyle-wincon-3.0.1\src\stream.rs C:\Users\wilki\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anstyle-wincon-3.0.1\src\windows.rs
+
+C:\Users\wilki\OneDrive\Área de Trabalho\tcc\mpd_iot-actix-energizz\migration\target\debug\deps\libanstyle_wincon-632d5710c6975eff.rlib: C:\Users\wilki\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anstyle-wincon-3.0.1\src\lib.rs C:\Users\wilki\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anstyle-wincon-3.0.1\src\ansi.rs C:\Users\wilki\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anstyle-wincon-3.0.1\src\stream.rs C:\Users\wilki\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anstyle-wincon-3.0.1\src\windows.rs
+
+C:\Users\wilki\OneDrive\Área de Trabalho\tcc\mpd_iot-actix-energizz\migration\target\debug\deps\anstyle_wincon-632d5710c6975eff.d: C:\Users\wilki\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anstyle-wincon-3.0.1\src\lib.rs C:\Users\wilki\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anstyle-wincon-3.0.1\src\ansi.rs C:\Users\wilki\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anstyle-wincon-3.0.1\src\stream.rs C:\Users\wilki\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anstyle-wincon-3.0.1\src\windows.rs
+
+C:\Users\wilki\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anstyle-wincon-3.0.1\src\lib.rs:
+C:\Users\wilki\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anstyle-wincon-3.0.1\src\ansi.rs:
+C:\Users\wilki\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anstyle-wincon-3.0.1\src\stream.rs:
+C:\Users\wilki\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anstyle-wincon-3.0.1\src\windows.rs:

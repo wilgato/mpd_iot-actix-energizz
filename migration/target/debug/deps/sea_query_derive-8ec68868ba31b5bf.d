@@ -1,0 +1,9 @@
+C:\Users\wilki\OneDrive\Área de Trabalho\tcc\mpd_iot-actix-energizz\migration\target\debug\deps\sea_query_derive-8ec68868ba31b5bf.dll: C:\Users\wilki\.cargo\registry\src\index.crates.io-6f17d22bba15001f\sea-query-derive-0.4.0\src\lib.rs C:\Users\wilki\.cargo\registry\src\index.crates.io-6f17d22bba15001f\sea-query-derive-0.4.0\src\error.rs C:\Users\wilki\.cargo\registry\src\index.crates.io-6f17d22bba15001f\sea-query-derive-0.4.0\src\iden_attr.rs C:\Users\wilki\.cargo\registry\src\index.crates.io-6f17d22bba15001f\sea-query-derive-0.4.0\src\iden_path.rs C:\Users\wilki\.cargo\registry\src\index.crates.io-6f17d22bba15001f\sea-query-derive-0.4.0\src\iden_variant.rs
+
+C:\Users\wilki\OneDrive\Área de Trabalho\tcc\mpd_iot-actix-energizz\migration\target\debug\deps\sea_query_derive-8ec68868ba31b5bf.d: C:\Users\wilki\.cargo\registry\src\index.crates.io-6f17d22bba15001f\sea-query-derive-0.4.0\src\lib.rs C:\Users\wilki\.cargo\registry\src\index.crates.io-6f17d22bba15001f\sea-query-derive-0.4.0\src\error.rs C:\Users\wilki\.cargo\registry\src\index.crates.io-6f17d22bba15001f\sea-query-derive-0.4.0\src\iden_attr.rs C:\Users\wilki\.cargo\registry\src\index.crates.io-6f17d22bba15001f\sea-query-derive-0.4.0\src\iden_path.rs C:\Users\wilki\.cargo\registry\src\index.crates.io-6f17d22bba15001f\sea-query-derive-0.4.0\src\iden_variant.rs
+
+C:\Users\wilki\.cargo\registry\src\index.crates.io-6f17d22bba15001f\sea-query-derive-0.4.0\src\lib.rs:
+C:\Users\wilki\.cargo\registry\src\index.crates.io-6f17d22bba15001f\sea-query-derive-0.4.0\src\error.rs:
+C:\Users\wilki\.cargo\registry\src\index.crates.io-6f17d22bba15001f\sea-query-derive-0.4.0\src\iden_attr.rs:
+C:\Users\wilki\.cargo\registry\src\index.crates.io-6f17d22bba15001f\sea-query-derive-0.4.0\src\iden_path.rs:
+C:\Users\wilki\.cargo\registry\src\index.crates.io-6f17d22bba15001f\sea-query-derive-0.4.0\src\iden_variant.rs:
