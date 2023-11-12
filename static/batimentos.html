@@ -23,15 +23,11 @@
     <!-- Conteúdo da Página -->
     <div id="content-placeholder"></div>
     <script>
-        fetch('/static/content.html') // Corrigido o caminho para o conteúdo desejado
+        fetch('/static/listaBatimentos.html') // Corrigido o caminho para o conteúdo desejado
             .then(response => response.text())
             .then(data => {
                 document.getElementById('content-placeholder').innerHTML = data;
-                
-                // Chame a função para criar os gráficos após inserir o conteúdo
-                createBarChart(); // Certifique-se de que a função createCharts() esteja definida em script.js
-                createPieChart();
-                updateDashboard();
+
             });
     </script>
     

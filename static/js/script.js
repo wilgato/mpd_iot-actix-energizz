@@ -103,15 +103,54 @@ function createPieChart(data) {
 }
 
 // Função para exibir alertas
-function showAlertMessage(message) {
+//function showAlertMessage(message) {
     // Implemente a lógica para exibir alertas na interface do usuário
-    console.log('Alerta:', message);
+ //   console.log('Alerta:', message);
+//}
+
+function showAlertMessage(message) {
+    const alertMessage = document.getElementById('alertMessage');
+    const alertText = document.getElementById('alertText');
+
+    alertText.textContent = message;
+    alertMessage.classList.remove('hidden');
+    isMessagePanelOpen = true;
 }
+
+function hideAlertMessage() {
+    const alertMessage = document.getElementById('alertMessage');
+    alertMessage.classList.add('hidden');
+}
+
+function closeMessagePanel() {
+    const messagePanel = document.getElementById('alertMessage');
+    messagePanel.classList.add('hidden');
+
+    // Remova o conteúdo da mensagem
+    const alertText = document.getElementById('alertText');
+    alertText.textContent = '';
+}
+
 
 // Função para adicionar mensagens ao log
 function addToMessageLog(message) {
     // Implemente a lógica para adicionar mensagens a um log na interface do usuário
     console.log('Log:', message);
+}
+
+function redirectToHome() {
+    // Redireciona para a página inicial (substitua 'index.html' pelo caminho correto)
+    window.location.href = 'index.html';
+}
+
+function redirectToLogin() {
+    // Redireciona para a página de login (substitua 'login.html' pelo caminho correto)
+    window.location.href = '/static/login.html';
+}
+
+function redirectToBatimentos() {
+    // Redireciona para a página de batimentos (substitua 'batimentos.html' pelo caminho correto)
+    window.location.href = '/static/batimentos.html';
 }
 
 // Função para atualizar a dashboard

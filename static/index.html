@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +9,15 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="/static/js/script.js"></script> <!-- Verifique o caminho correto -->
 </head>
+
 <body>
     <header class="navbar navbar-dark bg-dark">
         <!-- Conteúdo do cabeçalho -->
         <div class="container">
             <h1 class="navbar-brand">SMC - Monitoramento de Saúde Corporal</h1>
             <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="patientDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="patientDropdown"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Selecione um Paciente
                 </button>
                 <div class="dropdown-menu" aria-labelledby="patientDropdown">
@@ -55,14 +58,26 @@
             .then(response => response.text())
             .then(data => {
                 document.getElementById('content-placeholder').innerHTML = data;
-                
+
                 // Chame a função para criar os gráficos após inserir o conteúdo
                 createBarChart(); // Certifique-se de que a função createCharts() esteja definida em script.js
                 createPieChart();
                 updateDashboard();
             });
     </script>
+    <!-- Elemento de mensagem centralizada (inicialmente oculto) -->
+    <div id="alertMessage" class="alert-message hidden">
+        <div class="popup">
+            <p id="alertText"></p>
+            <button type="button" id="closeButton" class="close-button" onclick="closeMessagePanel()">Fechar</button>
+            <button type="button" id="loginButton" onclick="redirectToLogin()">Login</button>
+            <button type="button" id="listButton" onclick="redirectToBatimentos()">Lista de Batimentos</button>
+        </div>
+    </div>
+    <script src="/static/js/script.js"></script> <!-- Corrigido o caminho do arquivo script.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 
-   
 </body>
+
 </html>
