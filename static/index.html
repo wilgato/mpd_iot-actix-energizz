@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/styles.css"> <!-- Verifique o caminho correto -->
+    <title>Monitoramento de Saúde Corporal</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/static/js/script.js"></script> <!-- Verifique o caminho correto -->
+</head>
+<body>
+    <header class="navbar navbar-dark bg-dark">
+        <!-- Conteúdo do cabeçalho -->
+        <div class="container">
+            <h1 class="navbar-brand">SMC - Monitoramento de Saúde Corporal</h1>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="patientDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Selecione um Paciente
+                </button>
+                <div class="dropdown-menu" aria-labelledby="patientDropdown">
+                    <a class="dropdown-item" href="#" data-value="patient1">Paciente 1</a>
+                    <a class="dropdown-item" href="#" data-value="patient2">Paciente 2</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container mt-4">
+        <!-- Conteúdo principal da página -->
+    </main>
+    <div class="spacer"></div>
+    <!-- Inclua o rodapé -->
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch('footer.html') // Caminho para o rodapé na pasta "template"
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+
+    <!-- Inclua o cabeçalho -->
+    <div id="header-placeholder"></div>
+    <script>
+        fetch('header.html') // Caminho para o cabeçalho na pasta "template"
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+    </script>
+
+    <!-- Conteúdo da Página -->
+    <div id="content-placeholder"></div>
+    <script>
+        fetch('content.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('content-placeholder').innerHTML = data;
+                
+                // Chame a função para criar os gráficos após inserir o conteúdo
+                createBarChart(); // Certifique-se de que a função createCharts() esteja definida em script.js
+                createPieChart();
+                updateDashboard();
+            });
+    </script>
+
+   
+</body>
+</html>

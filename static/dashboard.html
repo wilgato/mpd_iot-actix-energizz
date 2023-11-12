@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <title>Monitoramento de Saúde Corporal</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/static/js/Chart.js"></script>
+    <script src="/static/js/script.js"></script>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    <script>
+        fetch('/static/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+    </script>
+
+    <div id="content-placeholder"></div>
+    <canvas id="myChart" width="400" height="200"></canvas>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            fetch('/energizz')
+                .then(response => response.json())
+                .then(data => {
+                    const labels = data.map(item => item.posting_time);
+                    const temperaturaData = data.map(item => item.temperatura);
+
+                    const ctx = document.getElementById('myChart').getContext('2d');
+                    const myChart = new Chart(ctx, {
+                        type: 'line',
+                        data: {
+                            labels: labels,
+                            datasets: [{
+                                label: 'Temperatura',
+                                data: temperaturaData,
+                                borderColor: 'rgba(75, 192, 192, 1)',
+                                borderWidth: 1,
+                                fill: false
+                            }]
+                        },
+                        options: {
+                            scales: {
+                                x: { type: 'linear', position: 'bottom' },
+                                y: { type: 'linear', position: 'left' }
+                            }
+                        }
+                    });
+                })
+                .catch(error => console.error('Error fetching data:', error));
+        });
+    </script>
+
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch('/static/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+
+    <div id="alertMessage" class="alert-message hidden">
+        <div class="popup">
+            <p id="alertText"></p>
+            <button type="button" id="closeButton" class="close-button" onclick="closeMessagePanel()">Fechar</button>
+            <button type="button" id="loginButton" onclick="redirectToLogin()">Login</button>
+            <button type="button" class="list-button" onclick="showHeartRateList()">Lista de Batimentos</button>
+        </div>
+    </div>
+    <script src="/static/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+</body>
+</html>

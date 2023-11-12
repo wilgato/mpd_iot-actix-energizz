@@ -1,0 +1,56 @@
+<main class="container mt-4">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Temperatura</h2>
+                    <p class="card-text" id="heartRate">0 BPM</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Umidade (SpO2)</h2>
+                    <p class="card-text" id="spo2">0%</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Pressao (hPa)</h2>
+                    <p class="card-text" id="hPa">0%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gráficos -->
+    <div class="row">
+        <div class="col-md-6">
+            <div class="cardGraf">
+                <div class="card-body">
+                    <canvas id="myChart" width="380" height="160"></canvas> <!-- Gráfico de barra -->
+                </div>
+            </div>
+        </div> 
+        <div class="col-md-6">
+            <div class="cardGraf">
+                <div class="card-body">   
+                    <canvas id="pieChart" width="380" height="160"></canvas> <!-- Gráfico de pizza -->
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Elemento de mensagem centralizada (inicialmente oculto) -->
+<div id="alertMessage" class="alert-message hidden">
+    <div class="popup">
+        <p id="alertText"></p>
+        <button type="button" id="closeButton" class="close-button" onclick="closeMessagePanel()">Fechar</button>
+        <button type="button" id="loginButton" onclick="redirectToLogin()">Login</button>
+        <button type="button" class="list-button" onclick="showHeartRateList()">Lista de Batimentos</button>
+    </div>
+</div>

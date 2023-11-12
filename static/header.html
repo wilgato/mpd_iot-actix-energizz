@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="chart.js"></script>
+    <script src="script.js"></script>
+
+    <title>Monitoramento de Saúde Corporal</title>
+</head>
+<body>
+    <header class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <h1 class="navbar-brand">SMC - Monitoramento de Saúde Corporal</h1>
+            <!-- Seletor de pacientes usando Bootstrap -->
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="patientDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Selecione um Paciente
+                </button>
+                <div class="dropdown-menu" aria-labelledby="patientDropdown">
+                    <a class="dropdown-item" href="inicio.html?patient=patient1">Paciente 1</a>
+                    <a class="dropdown-item" href="inicio.html?patient=patient2">Paciente 2</a>
+                    <!-- Adicione mais opções de pacientes conforme necessário -->
+                </div>
+            </div>
+        </div>
+    </header>

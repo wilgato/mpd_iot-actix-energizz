@@ -1,0 +1,244 @@
+/* Reset de estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o seletor de pacientes */
+#patientSelect {
+    margin-left: 20px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+/* O restante do seu CSS permanece o mesmo */
+
+
+/* Configuração básica do corpo */
+html, body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Estilo para garantir que o rodapé fique no final da página */
+
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 0.5rem 0; /* Ajuste o valor do padding conforme necessário */
+}
+
+/* Estilo do título */
+h1 {
+    font-size: 1.5rem;
+}
+
+/* Container principal */
+.container {
+    max-width: 12000px;
+    margin: 0 auto;
+    padding: 1rem;
+    min-height: 100%; /* Estilo para garantir que o rodapé fique no final da página */
+    position: relative;
+}
+
+/* Estilo da lista de mensagens */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 0.5rem;
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    li {
+        padding: 0.5rem;
+        margin-bottom: 0.25rem;
+    }
+}
+
+/* Estilo dos cartões */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem; /* Reduza o padding para diminuir o tamanho */
+    margin-bottom: 1rem;
+    max-width: 420px; /* Reduza a largura máxima para diminuir o tamanho */
+}
+
+/* Estilo dos cartões Grafico */
+.cardGraf {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem; /* Reduza o padding para diminuir o tamanho */
+    margin-bottom: 1rem;
+   /* max-width: 500px; /* Reduza a largura máxima para diminuir o tamanho */
+}
+
+/* Estilo dos títulos dos cartões */
+.card h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+/* Estilo dos dados nos cartões */
+.card p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Estilo de botões (opcional) */
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsividade: faça ajustes conforme necessário */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .card {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    /* Adicione mais estilos de responsividade conforme necessário */
+}
+
+/* Espaço entre gráficos e rodapé */
+.spacer {
+    height: 20px; /* Ajuste a altura conforme necessário para separar os gráficos do rodapé */
+}
+
+/* Estilo do rodapé com cor de fundo */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 5px 0; /* Ajuste o valor do padding conforme necessário */
+    /*margin-top: 20px; /* Adicione espaço acima do rodapé */
+}
+
+/* Estilo para centralizar o popup */
+.alert-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.popup {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* estilizar os botoes do popup */
+
+/* Estilo para o popup */
+.popup {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo para o botão "Fechar" */
+.close-button {
+    background-color: #ff3333; /* Cor de fundo vermelha */
+    color: #fff; /* Cor do texto branca */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.close-button:hover {
+    background-color: #ff0000; /* Cor de fundo vermelha mais escura ao passar o mouse */
+}
+
+/* Estilo para o botão "Lista de Batimentos" */
+.list-button {
+    background-color: #007bff; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branca */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.list-button:hover {
+    background-color: #0056b3; /* Cor de fundo azul mais escura ao passar o mouse */
+}
+
+/* Estilo para o botão de login */
+#loginButton {
+    background-color: #00ff9d; /* Cor de fundo azul */
+    color: white; /* Texto branco */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Efeito de transição de cor de fundo */
+
+    /* Adicione mais estilos conforme necessário */
+}
+
+#loginButton:hover {
+    background-color: #00b32d; /* Cor de fundo mais escura ao passar o mouse */
+}
+
+.hidden {
+    display: none;
+}
